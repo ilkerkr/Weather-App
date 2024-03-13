@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 1s ease;
+    font-family: "Do Hyeon", sans-serif;
+}
+
+.section {
+    background-image: url(img/body.jpeg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #240A34;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #59D5E0;
+}
+
+.title {
+    font-size: 3rem;
+    padding: 2rem 0;
+    font-weight: bold;
+    width: 20%;
+    text-align: center;
+}
+
+#input {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #59D5E0;
+    color: #59D5E0;
+    padding: 0.5rem 0;
+    width: 20%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#input::placeholder {
+    color: #59D5E0;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 55%;
+    margin: 2rem auto ;
+    font-size: 2rem;
+}
+
+#city, 
+#emoji, 
+#derece,
+#desc,
+#minmax,
+#nem {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+}
+
+sup{
+    font-size: 1rem;
+    padding: 0.1rem .3rem;
+    background-color: #59D5E0;
+    border-radius: 0.3rem;
+    font-weight: 500;
+}
+
+@media (max-width: 500px) {
+    .section {
+        height: 200vh;
+    };
+} ;
